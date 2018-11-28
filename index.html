@@ -17,9 +17,14 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <style>
         #price{
-            color:blue;
+            color:deepskyblue;
         }
-    
+        #pricetwo{
+            color:deepskyblue;
+        }
+        #pricethree{
+            color:deepskyblue;
+        }
     </style>
 </head>
 
@@ -36,16 +41,16 @@
             </div>
             <!-- modal body-->
             <div class="modal-body">
-                <a href="http://www.amazon.com"><button style="font-size:24px"><i class="fa fa-amazon"></i></button></a>
+                <a href="http://www.amazon.com"><button style="font-size:24px"><i class="fa fa-amazon"></i></button></a><h2 id="price"></h2>
                 <br>
                 <br>
                 <br>
-                <a href="https://www.scholastic.com">Scholastic,Inc.</a>
+                <a href="https://www.scholastic.com">Scholastic,Inc.</a><h2 id="pricetwo"></h2>
                 <br>
                 <br>
                 <br>
                 <a href="https://www.barnesandnoble.com/">Barnes & Noble</a>
-                <h2 id="price"></h2>
+                <h2 id="pricethree"></h2>
             </div>
             <!-- modal footer-->
             <div class="modal-footer">
@@ -275,8 +280,10 @@
                                     <!--modal popup-->
                                     <!--button to trigger modal-->
                                     <button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal" id="yg">BUY</button>
+                                    
                                 </div>
                             </div>
+                            
 
                         </div>
                     </div>
@@ -323,8 +330,12 @@
     <script>
         document.getElementById("yg").onclick=function(){
             document.getElementById("price").innerHTML="$20";
+            document.getElementById("pricetwo").innerHTML="$13";
+            document.getElementById("pricethree").innerHTML="$25";
         };
-                document.getElementById("ul").onclick=function(){
+
+        
+        document.getElementById("ul").onclick=function(){
             document.getElementById("price").innerHTML="$15";
         };
         
